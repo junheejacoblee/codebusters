@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "/api/(.*)", "destination": "https://codebusters.onrender.com" }
+    { "source": "/api/(.*)", "destination": "https://codebusters.onrender.com/$1" }
   ]
 }
