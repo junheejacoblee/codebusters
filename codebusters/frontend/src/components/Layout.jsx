@@ -175,17 +175,17 @@ const AccentBtn = ({ to, children }) => (
 
 // Xi (Ξ) logo mark — three horizontal bars inspired by the Greek capital letter
 function XiMark({ size = 18 }) {
-  const gap = size * 0.22;
-  const barH = size * 0.18;
-  const wide = size * 0.72;
-  const mid = size * 0.52;
-  const rx = barH * 0.4;
-  const cx = size / 2;
+  // wider aspect ratio: w = size * 1.5, h = size
+  const w = size * 1.5;
+  const barH = size * 0.13;
+  const wide = w * 0.92;
+  const mid = w * 0.62;
+  const rx = barH * 0.5;
   return (
-    <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} style={{ flexShrink: 0 }}>
-      <rect x={(size - wide) / 2} y={size * 0.08} width={wide} height={barH} rx={rx} fill="var(--accent)" />
-      <rect x={(size - mid) / 2}  y={size * 0.41} width={mid}  height={barH} rx={rx} fill="var(--accent)" />
-      <rect x={(size - wide) / 2} y={size * 0.74} width={wide} height={barH} rx={rx} fill="var(--accent)" />
+    <svg width={w} height={size} viewBox={`0 0 ${w} ${size}`} style={{ flexShrink: 0 }}>
+      <rect x={(w - wide) / 2} y={size * 0.08} width={wide} height={barH} rx={rx} fill="var(--accent)" />
+      <rect x={(w - mid) / 2}  y={size * 0.44} width={mid}  height={barH} rx={rx} fill="var(--accent)" />
+      <rect x={(w - wide) / 2} y={size * 0.79} width={wide} height={barH} rx={rx} fill="var(--accent)" />
     </svg>
   );
 }
