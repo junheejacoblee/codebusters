@@ -175,7 +175,6 @@ const AccentBtn = ({ to, children }) => (
 
 // Xi (Ξ) logo mark — three horizontal bars inspired by the Greek capital letter
 function XiMark({ size = 18 }) {
-  // match favicon proportions exactly: 32x32 box, bars same relative size
   return (
     <svg width={size} height={size} viewBox="0 0 32 32" style={{ flexShrink: 0 }}>
       <rect x="6"  y="7"    width="20" height="3" rx="1" fill="var(--accent)" />
