@@ -36,3 +36,4 @@ input, select, optgroup { font-family: var(--mono); }
 
 input::placeholder { color: var(--text-3); opacity: 1; }
 textarea::placeholder { color: var(--text-3); opacity: 1; }
+ 
