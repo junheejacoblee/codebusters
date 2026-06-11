@@ -41,8 +41,7 @@ export default function Home() {
 
       {/* Stats badges */}
       <div style={{ display: 'flex', gap: 10, marginBottom: 48, flexWrap: 'wrap' }}>
-        <StatBadge value={stats.user_count} label="users" />
-        <StatBadge value={stats.team_count} label="different teams" />
+        <StatBadge value={stats.team_count} label="teams using the tool" />
       </div>
 
       {/* CTA */}
